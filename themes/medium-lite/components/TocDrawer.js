@@ -1,5 +1,5 @@
 import Catalog from './Catalog'
-import { useMediumGlobal } from '@/themes/medium'
+import { useMediumGlobal } from '@/themes/medium-lite'
 
 /**
  * 悬浮抽屉目录
