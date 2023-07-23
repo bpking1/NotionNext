@@ -60,7 +60,7 @@ const LayoutBase = props => {
             {/* CSS样式 */}
             <Style/>
 
-            <div id='theme-medium' className='bg-white dark:bg-hexo-black-gray w-full h-full min-h-screen justify-center dark:text-gray-300'>
+            <div id='theme-medium' className=' bg-[#f8f3e9] dark:bg-hexo-black-gray w-full h-full min-h-screen justify-center dark:text-gray-300'>
 
                 <main id='wrapper' className={(BLOG.LAYOUT_SIDEBAR_REVERSE ? 'flex-row-reverse' : '') + 'relative flex justify-between w-full h-full mx-auto'}>
                     {/* 桌面端左侧菜单 */}
@@ -72,7 +72,7 @@ const LayoutBase = props => {
                         {/* 顶部导航栏 */}
                         <TopNavBar {...props} />
 
-                        <div id='container-inner' className='px-7 max-w-5xl justify-center mx-auto min-h-screen'>
+                        <div id='container-inner' className='px-7 max-w-4xl mx-auto h-screen'>
                             <Transition
                                 show={!onLoading}
                                 appear={true}
@@ -90,7 +90,7 @@ const LayoutBase = props => {
 
                             <JumpToTopButton />
                         </div>
-
+                        <hr className='border-b-2 border-gray-300'></hr>
                         {/* 底部 */}
                         <Footer title={siteInfo?.title} />
                     </div>
@@ -255,7 +255,7 @@ const LayoutCategoryIndex = (props) => {
   const { locale } = useGlobal()
   return (
         <LayoutBase {...props}>
-            <div className='bg-white dark:bg-gray-700 py-10'>
+            <div className='bg-[#f8f3e9] dark:bg-gray-700 py-10'>
                 <div className='dark:text-gray-200 mb-5'>
                     <i className='mr-4 fas fa-th' />{locale.COMMON.CATEGORY}:
                 </div>
@@ -290,7 +290,7 @@ const LayoutTagIndex = props => {
   const { locale } = useGlobal()
   return (
         <LayoutBase {...props}>
-            <div className="bg-white dark:bg-gray-700 py-10">
+            <div className="bg-[#f8f3e9] dark:bg-gray-700 py-10">
                 <div className="dark:text-gray-200 mb-5">
                     <i className="mr-4 fas fa-tag" />
                     {locale.COMMON.TAGS}:

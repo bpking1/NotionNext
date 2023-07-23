@@ -14,6 +14,6 @@ export default function BlogPostBar(props) {
   } else if (category) {
         <div className='flex items-center  py-8'><div className='text-xl'><i className='mr-2 fas fa-th' />{locale.COMMON.CATEGORY}:</div>{category}</div>
   } else {
-    return <></>
+    return <><div className='mb-10 mt-48 text-3xl'>Posts</div></>
   }
 }
