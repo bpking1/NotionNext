@@ -11,6 +11,9 @@ const Style = () => {
     .dark body{
         background-color: black;
     }
+    body{
+      background-color: #f8f3e9;
+    }
 
   `}</style>
 }
