@@ -4,7 +4,7 @@ import React from 'react'
 
 const BlogPostCard = ({ post }) => {
     return (
-        <div className="w-full py-1 sm:py-0">
+        <div className="w-full py-1">
             <Link
                 href={`${BLOG.SUB_PATH}/${post.slug}`}
                 passHref

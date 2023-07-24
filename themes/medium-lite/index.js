@@ -94,6 +94,8 @@ const LayoutBase = props => {
                         {/* 底部 */}
                         <Footer title={siteInfo?.title} />
                     </div>
+                     {/* 移动端目录 */}
+                    <TocDrawer {...props} />
                 </main>
 
                 {/* 移动端底部导航栏 */}
@@ -167,8 +169,8 @@ const LayoutSlug = props => {
                     <Comment frontMatter={post} />
                 </section>
 
-                {/* 移动端目录 */}
-                <TocDrawer {...props} />
+                {/* 移动端目录
+                <TocDrawer {...props} /> */}
             </div>}
         </LayoutBase>
   )
