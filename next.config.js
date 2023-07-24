@@ -50,6 +50,11 @@ module.exports = withBundleAnalyzer({
         source: '/feed',
         destination: '/rss/feed.xml',
         permanent: true
+      },
+      {
+        source: '/2021/09/06/emby%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E7%9B%98%E8%BD%AC%E7%9B%B4%E9%93%BE',
+        destination: '/posts/emby_jellyfin_to_alist_directlink',
+        permanent: true
       }
     ]
   },
