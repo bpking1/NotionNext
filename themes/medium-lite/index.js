@@ -73,15 +73,15 @@ const LayoutBase = props => {
                         {/* 顶部导航栏 */}
                         <TopNavBar {...props} />
 
-                        <div id='container-inner' className='px-7 max-w-4xl mx-auto min-h-screen'>
+                        <div id='container-inner' className='px-7 max-w-4xl justify-center mx-auto min-h-screen'>
                             <Transition
                                 show={!onLoading}
                                 appear={true}
                                 enter="transition ease-in-out duration-700 transform order-first"
                                 enterFrom="opacity-0 translate-y-16"
-                                enterTo="opacity-100 translate-y-0"
+                                enterTo="opacity-100"
                                 leave="transition ease-in-out duration-300 transform"
-                                leaveFrom="opacity-100 translate-y-0"
+                                leaveFrom="opacity-100"
                                 leaveTo="opacity-0 -translate-y-16"
                                 unmount={false}
                             >
@@ -95,8 +95,7 @@ const LayoutBase = props => {
                         {/* 底部 */}
                         <Footer title={siteInfo?.title} />
                     </div>
-                     {/* 移动端目录 */}
-                    <TocDrawer {...props} />
+                  
                 </main>
 
                 {/* 移动端底部导航栏 */}
@@ -173,8 +172,8 @@ const LayoutSlug = props => {
                     <Comment frontMatter={post} />
                 </section>
 
-                {/* 移动端目录
-                <TocDrawer {...props} /> */}
+                {/* 移动端目录 */}
+                <TocDrawer {...props} />
             </div>}
         </LayoutBase>
   )
