@@ -63,7 +63,7 @@ const Catalog = ({ toc }) => {
     <div className='w-full mt-2 mb-4'>
       <Progress />
     </div>
-    <div className='overflow-y-auto max-h-96 h-44 md:h-80 overscroll-none scroll-hidden' ref={tRef}>
+    <div className='overflow-y-auto min-h-[10rem] max-h-56 md:max-h-[30rem] overscroll-none scroll-hidden' ref={tRef}>
       <nav className='h-full  text-black'>
         {toc.map((tocItem) => {
           const id = uuidToId(tocItem.id)
